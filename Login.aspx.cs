@@ -28,8 +28,19 @@ namespace Desk_Reservation
 
             if (accountExist > 0)
             {
-
-                FormsAuthentication.RedirectFromLoginPage(LoginTextBox.Text, true);
+                myConnection.Open();
+                string query2 = "Select count(*) from [dbo].[Users] where [Login] = '" + LoginTextBox.Text.Trim() + "' and [Password] = '" + PasswordTextBox.Text + "' and [Admin] is not null";
+                SqlCommand command2 = new SqlCommand(query2, myConnection);
+                int accountAdmin = int.Parse(command2.ExecuteScalar().ToString());
+                myConnection.Close();
+                if (accountAdmin > 0)
+                {
+                    Response.Redirect("Administration_Panel.aspx");
+                }
+                else
+                {
+                    FormsAuthentication.RedirectFromLoginPage(LoginTextBox.Text, true);
+                }
                 
             }
             InvalidCredentialsMessage.Visible = true;

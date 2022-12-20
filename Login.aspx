@@ -24,6 +24,8 @@
 
     <asp:Label ID="InvalidCredentialsMessage" runat="server" ForeColor="Red" Text="Incorrect username or password." Font-Size="Large"
             Visible="False"></asp:Label> 
+    <br />
+    <asp:HyperLink ID="RegistrationHyperLink" runat="server" NavigateUrl="~/Registration.aspx">Sign Up</asp:HyperLink>
     
 </body>
 </html>

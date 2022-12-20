@@ -28,8 +28,6 @@
             <br />
             Desk Number
             <br />
-<%--            <asp:DropDownList ID="DeskNumberDropDownList" runat="server" DataSourceID="DeskDataSource2" DataTextField="DeskNumber" DataValueField="DeskNumber"></asp:DropDownList>
-            <asp:SqlDataSource ID="DeskDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:DeskReservationConnectionString %>" SelectCommand="SELECT [DeskNumber] FROM [Desk] ORDER BY [DeskNumber]"></asp:SqlDataSource>--%>
             <asp:DropDownList ID="DropDownList1" runat="server">
             </asp:DropDownList>
             <br />

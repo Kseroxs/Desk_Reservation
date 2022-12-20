@@ -11,6 +11,23 @@
     <form id="form1" runat="server">
         <div>
         </div>
+        Username
+    <br />
+    <asp:TextBox ID="LoginTextBox" runat="server"></asp:TextBox>
+    <br />
+    E-mail
+    <br />
+
+    <asp:TextBox ID="EmailTextBox" Type="email" runat="server"></asp:TextBox>
+        <br />
+    Password
+    <br />
+
+    <asp:TextBox ID="PasswordTextBox" Type="password" runat="server"></asp:TextBox>
+        <br />
+        <asp:Button ID="RegistrationButton" runat="server" Text="Sign Up" OnClick="RegistrationButton_Click" />
+        <br />
+        <asp:HyperLink ID="LoginHyperLink" runat="server" NavigateUrl="~/Login.aspx">Sign In</asp:HyperLink>
     </form>
 </body>
 </html>

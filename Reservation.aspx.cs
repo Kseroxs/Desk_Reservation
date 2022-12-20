@@ -33,16 +33,14 @@ namespace Desk_Reservation
             myConnection.Close();
 
             myConnection.Open();
-            SqlCommand com = new SqlCommand("select *from Desk where Location= '"+LocationDropDownList.Text+"'", myConnection);
-            // table name   
+            SqlCommand com = new SqlCommand("select * from Desk where Location= '"+LocationDropDownList.Text+"'", myConnection);
             SqlDataAdapter da = new SqlDataAdapter(com);
             DataSet ds = new DataSet();
-            da.Fill(ds);  // fill dataset  
-            DropDownList1.DataTextField = ds.Tables[0].Columns["DeskNumber"].ToString(); // text field name of table dispalyed in dropdown       
+            da.Fill(ds);
+            DropDownList1.DataTextField = ds.Tables[0].Columns["DeskNumber"].ToString();
             DropDownList1.DataValueField = ds.Tables[0].Columns["DeskID"].ToString();
-            // to retrive specific  textfield name   
-            DropDownList1.DataSource = ds.Tables[0];      //assigning datasource to the dropdownlist  
-            DropDownList1.DataBind();  //binding dropdownlist
+            DropDownList1.DataSource = ds.Tables[0];
+            DropDownList1.DataBind();
         }
 
         protected void Calendar1_SelectionChanged(object sender, EventArgs e)

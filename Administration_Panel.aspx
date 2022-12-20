@@ -11,6 +11,14 @@
     <form id="form1" runat="server">
         <div>
         </div>
+    <asp:TextBox ID="LocationTextBox" runat="server"></asp:TextBox>
+    <asp:Button ID="AddLocationButton" runat="server" Text="Add Location" OnClick="AddLocationButton_Click" />
+    <br />
+    <br />
+    <asp:DropDownList ID="LocationDropDownList" runat="server" DataSourceID="DeskDataSource1" DataTextField="Location" DataValueField="Location"></asp:DropDownList>
+        <asp:SqlDataSource ID="DeskDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:DeskReservationConnectionString %>" SelectCommand="SELECT [Location] FROM [Locations] ORDER BY [Location]"></asp:SqlDataSource>
     </form>
+    <asp:TextBox ID="DeskTextBox" runat="server"></asp:TextBox>
+    <asp:Button ID="AddDeskButton" runat="server" Text="Add Desk" OnClick="AddDeskButton_Click" />
 </body>
 </html>

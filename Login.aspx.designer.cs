@@ -58,5 +58,14 @@ namespace Desk_Reservation
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label InvalidCredentialsMessage;
+
+        /// <summary>
+        /// Kontrolka RegistrationHyperLink.
+        /// </summary>
+        /// <remarks>
+        /// Pole generowane automatycznie.
+        /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink RegistrationHyperLink;
     }
 }
