@@ -18,11 +18,19 @@
                 <TitleStyle BackColor="White" BorderColor="Black" BorderWidth="4px" Font-Bold="True" Font-Size="12pt" ForeColor="#333399" />
                 <TodayDayStyle BackColor="#CCCCCC" />
             </asp:Calendar>
+            Location
             <br />
-            <asp:DropDownList ID="DropDownList1" runat="server"></asp:DropDownList>
+            
+            <asp:DropDownList ID="LocationDropDownList" runat="server" DataSourceID="DeskDataSource" DataTextField="Location" DataValueField="Location"></asp:DropDownList>
+            <asp:SqlDataSource ID="DeskDataSource" runat="server" ConnectionString="<%$ ConnectionStrings:DeskReservationConnectionString %>" SelectCommand="SELECT [Location] FROM [Locations] ORDER BY [Location]"></asp:SqlDataSource>
+            <br />
+            Desk Number
+            <br />
+            <asp:DropDownList ID="DeskNumberDropDownList" runat="server" DataSourceID="DeskDataSource2" DataTextField="DeskNumber" DataValueField="DeskNumber"></asp:DropDownList>
+            <asp:SqlDataSource ID="DeskDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:DeskReservationConnectionString %>" SelectCommand="SELECT [DeskNumber] FROM [Desk] ORDER BY [DeskNumber]"></asp:SqlDataSource>
             <br />
             <br />
-            <asp:Button ID="Button1" runat="server" Text="Book Desk" />
+            <asp:Button ID="Book" runat="server" Text="Book Desk" OnClick="Book_Click" />
         </div>
     </form>
 </body>
