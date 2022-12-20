@@ -8,6 +8,10 @@
     <title></title>
 </head>
 <body>
+        <asp:Panel runat="server" ID="AuthenticatedMessagePanel">
+        <asp:Label runat="server" ID="WelcomeMessage"></asp:Label>
+                    
+    </asp:Panel>
     <form id="form1" runat="server">
         <div>
         </div>

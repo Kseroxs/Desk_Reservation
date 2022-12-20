@@ -11,7 +11,11 @@ namespace Desk_Reservation
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (Request.IsAuthenticated)
+            {
+                WelcomeMessage.Text = "Welcome back, " + User.Identity.Name + "!";
+                AuthenticatedMessagePanel.Visible = true;
+            }
         }
     }
 }
