@@ -30,7 +30,7 @@ namespace Desk_Reservation
             {
 
                 FormsAuthentication.RedirectFromLoginPage(LoginTextBox.Text, true);
-                Response.Redirect("User_Panel.aspx");
+                
             }
             InvalidCredentialsMessage.Visible = true;
         }

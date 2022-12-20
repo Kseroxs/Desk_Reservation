@@ -11,7 +11,7 @@
     <form id="form1" runat="server">
         <div>
         </div>
-    Login
+    Username
     <br />
     <asp:TextBox ID="LoginTextBox" runat="server"></asp:TextBox>
     <br />
@@ -19,10 +19,10 @@
     <br />
     <asp:TextBox ID="PasswordTextBox" Type="password" runat="server"></asp:TextBox>
         <br />
-        <asp:Button ID="LoginButton" runat="server" Text="Login" OnClick="LoginButton_Click" />
+        <asp:Button ID="LoginButton" runat="server" Text="Sign In" OnClick="LoginButton_Click" />
     </form>
 
-    <asp:Label ID="InvalidCredentialsMessage" runat="server" ForeColor="Red" Text="Niepoprawny login lub hasło." Font-Size="Large"
+    <asp:Label ID="InvalidCredentialsMessage" runat="server" ForeColor="Red" Text="Incorrect username or password." Font-Size="Large"
             Visible="False"></asp:Label> 
     
 </body>

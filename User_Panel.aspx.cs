@@ -17,5 +17,10 @@ namespace Desk_Reservation
                 AuthenticatedMessagePanel.Visible = true;
             }
         }
+
+        protected void MakeReservationButton_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Reservation.aspx");
+        }
     }
 }

@@ -33,6 +33,15 @@ namespace Desk_Reservation
         protected global::System.Web.UI.WebControls.Calendar Calendar1;
 
         /// <summary>
+        /// Kontrolka Label1.
+        /// </summary>
+        /// <remarks>
+        /// Pole generowane automatycznie.
+        /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label1;
+
+        /// <summary>
         /// Kontrolka LocationDropDownList.
         /// </summary>
         /// <remarks>
@@ -51,22 +60,13 @@ namespace Desk_Reservation
         protected global::System.Web.UI.WebControls.SqlDataSource DeskDataSource;
 
         /// <summary>
-        /// Kontrolka DeskNumberDropDownList.
+        /// Kontrolka DropDownList1.
         /// </summary>
         /// <remarks>
         /// Pole generowane automatycznie.
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DeskNumberDropDownList;
-
-        /// <summary>
-        /// Kontrolka DeskDataSource2.
-        /// </summary>
-        /// <remarks>
-        /// Pole generowane automatycznie.
-        /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource DeskDataSource2;
+        protected global::System.Web.UI.WebControls.DropDownList DropDownList1;
 
         /// <summary>
         /// Kontrolka Book.

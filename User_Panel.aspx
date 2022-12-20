@@ -10,11 +10,10 @@
 <body>
         <asp:Panel runat="server" ID="AuthenticatedMessagePanel">
         <asp:Label runat="server" ID="WelcomeMessage"></asp:Label>
-                    
-    </asp:Panel>
+        </asp:Panel>
     <form id="form1" runat="server">
-        <div>
-        </div>
+        <asp:Button ID="MakeReservationButton" runat="server" Text="Make a reservation" OnClick="MakeReservationButton_Click" />
     </form>
+    
 </body>
 </html>
