@@ -49,5 +49,14 @@ namespace Desk_Reservation
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button MakeReservationButton;
+
+        /// <summary>
+        /// Kontrolka ReservationGridView.
+        /// </summary>
+        /// <remarks>
+        /// Pole generowane automatycznie.
+        /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView ReservationGridView;
     }
 }
