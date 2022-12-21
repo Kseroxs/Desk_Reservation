@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Desk_Reservation", "Desk_Re
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Desk_Reservation.Tests", "..\Desk_Reservation.Tests\Desk_Reservation.Tests.csproj", "{5873C9AF-FAAD-4EA3-8851-BFD163D69A80}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Desk_ReservationTests", "..\Desk_ReservationTests\Desk_ReservationTests.csproj", "{0A387E4B-A125-4CFA-B193-CCC66B9AD1BE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{5873C9AF-FAAD-4EA3-8851-BFD163D69A80}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5873C9AF-FAAD-4EA3-8851-BFD163D69A80}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5873C9AF-FAAD-4EA3-8851-BFD163D69A80}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A387E4B-A125-4CFA-B193-CCC66B9AD1BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A387E4B-A125-4CFA-B193-CCC66B9AD1BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A387E4B-A125-4CFA-B193-CCC66B9AD1BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A387E4B-A125-4CFA-B193-CCC66B9AD1BE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

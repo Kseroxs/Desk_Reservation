@@ -31,7 +31,7 @@ namespace Desk_Reservation
 
             
         }
-
+        // listing available desks in choosen location and date
         protected void Calendar1_SelectionChanged(object sender, EventArgs e)
         {
             date = Calendar1.SelectedDate.ToShortDateString();
@@ -49,7 +49,7 @@ namespace Desk_Reservation
             myConnection.Close();
         }
 
-
+        // making reservation for desk
         protected void Book_Click(object sender, EventArgs e)
         {
             myConnection.Open();

@@ -17,7 +17,7 @@ namespace Desk_Reservation
         {
 
         }
-
+        // adding new user
         protected void RegistrationButton_Click(object sender, EventArgs e)
         {
             myConnection.Open();

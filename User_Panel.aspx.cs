@@ -32,12 +32,12 @@ namespace Desk_Reservation
             ReservationGridView.DataBind();
 
         }
-
+        // redirecting to reservation page
         protected void MakeReservationButton_Click(object sender, EventArgs e)
         {
             Response.Redirect("Reservation.aspx");
         }
-
+        //list od user's reservations
         public List<ReservationClass> ReservationList()
         {
             using (SqlCommand cmd = new SqlCommand("SELECT ReservationID, DeskNumber, Location, ReservationDate FROM Reservation where UserID= '" + userid + "'", myConnection))
@@ -64,6 +64,7 @@ namespace Desk_Reservation
             }
 
         }
+        // deleting reservations
         protected void ReservationGridView_RowCommand(object sender, GridViewCommandEventArgs e)
         {
             if (e.CommandName == "DeleteButton")
