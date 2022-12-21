@@ -24,6 +24,15 @@ namespace Desk_Reservation
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
+        /// Kontrolka LocationsGridView.
+        /// </summary>
+        /// <remarks>
+        /// Pole generowane automatycznie.
+        /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView LocationsGridView;
+
+        /// <summary>
         /// Kontrolka LocationTextBox.
         /// </summary>
         /// <remarks>
@@ -58,6 +67,15 @@ namespace Desk_Reservation
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.SqlDataSource DeskDataSource1;
+
+        /// <summary>
+        /// Kontrolka DesksGridView.
+        /// </summary>
+        /// <remarks>
+        /// Pole generowane automatycznie.
+        /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView DesksGridView;
 
         /// <summary>
         /// Kontrolka DeskTextBox.

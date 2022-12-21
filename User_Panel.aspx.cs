@@ -70,8 +70,6 @@ namespace Desk_Reservation
             {
                 int index = Convert.ToInt32(e.CommandArgument);
                 int reservationid = Convert.ToInt32(ReservationGridView.Rows[index].Cells[1].Text);
-                //string imie = GridView2.Rows[index].Cells[2].Text;
-                //string nazwisko = GridView2.Rows[index].Cells[3].Text;
                 myConnection.Open();
                 string query = "Delete from Reservation WHERE ReservationID = '" + reservationid + "'";
                 SqlCommand delete = new SqlCommand(query, myConnection);
